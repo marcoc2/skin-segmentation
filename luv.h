@@ -10,13 +10,13 @@
 /*   -125 < v < 87  -> range: 213         */
 /*----------------------------------------*/
 
-int RGBToLUV(IplImage* bitmap, int step, int nChannels);
-int LUVToRGB(IplImage* bitmap, int step, int nChannels);
-int RGBToXYZ(IplImage* bitmap, int step, int nChannels);
-int XYZToRGB(IplImage* bitmap, int step, int nChannels);
+int RGBToLUV( IplImage* bitmap, int step, int nChannels );
+int LUVToRGB( IplImage* bitmap, int step, int nChannels );
+int RGBToXYZ( IplImage* bitmap, int step, int nChannels );
+int XYZToRGB( IplImage* bitmap, int step, int nChannels );
 
-void rgb2luv(int R, int G, int B,  int *luv);
-void luv2rgb(int* vec, int* rgb);
-void convertion(IplImage* bitmap, char* conv, int step, int nChannels);
+void rgb2luv( int R, int G, int B, int* luv );
+void luv2rgb( int* vec, int* rgb );
+void convertion( IplImage* bitmap, std::string conv, int step, int nChannels );
 
 #endif
